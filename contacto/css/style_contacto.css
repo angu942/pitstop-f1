@@ -1,0 +1,253 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  line-height: 1.6;
+  background: #ffffff;
+  color: #000000;
+}
+
+/* Navbar – estilo F1 moderno */
+.navbar {
+  background: rgba(0, 0, 0, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 1.2rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  border-bottom: 1px solid #000000;
+}
+
+.logo {
+  color: #ffffffd0;               
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+}
+
+.nav-menu a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 0.6rem 1.2rem;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-menu a:hover {
+  background: #e10600;
+  color: rgb(0, 0, 0);
+  transform: translateY(-3px);
+}
+
+/* LOGO COMO IMAGEN EN EL MENÚ */
+.logo img {
+  height: 45px;              /* tamaño perfecto para menú */
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.1);
+}
+
+/* Centra el logo verticalmente si hace falta */
+.navbar {
+  align-items: center;
+}
+
+
+
+.contacto-section {
+  padding: 0 20px;
+}
+
+.contacto-caja {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #111;
+  padding: 60px 50px;
+  border: 5px solid #c4150fc4;
+  border-radius: 30px;
+}
+
+.contacto-titulo {
+  text-align: center;
+  color: #ffffffd7;
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.contacto-sub {
+  text-align: center;
+  color: #aaa;
+  font-size: 19px;
+  margin-bottom: 50px;
+}
+
+/* Campos del formulario */
+.formulario-f1 label {
+  display: block;
+  color: white;
+  font-size: 17px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.formulario-f1 input,
+.formulario-f1 textarea,
+.formulario-f1 select {
+  width: 100%;
+  padding: 16px;
+  background: #222;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.formulario-f1 input:focus,
+.formulario-f1 textarea:focus,
+.formulario-f1 select:focus {
+  outline: 3px solid #e10600;
+  background: #2a2a2a;
+}
+
+/* Checkbox al lado del texto */
+.checkbox-contenedor {
+  margin: 40px 0 50px;
+  text-align: center;
+}
+
+.checkbox-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.checkbox-label input[type="checkbox"] {
+  width: 24px;
+  height: 24px;
+  accent-color: #e10600;
+}
+
+/* Botón rojo grande y centrado */
+.boton-contenedor {
+  text-align: center;
+}
+
+.btn-enviar {
+  background: #e10600;
+  color: white;
+  padding: 18px 70px;
+  font-size: 24px;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(225, 6, 0, 0.4);
+}
+
+.btn-enviar:hover {
+  background: #ff1a1a;
+  transform: translateY(-3px);
+}
+
+/* ==================== FOOTER ==================== */
+.footer {
+  background: #000000;
+  color: #000000;
+  padding: 80px 5% 30px;
+  margin-top: 100px;
+  border-top: 1px solid #000000;
+}
+
+.footer-contenido {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+.footer-logo img {
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.footer-logo p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #fffdfd;
+}
+
+.footer-enlaces h4,
+.footer-redes h4 {
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+}
+
+.footer-enlaces ul {
+  list-style: none;
+}
+
+.footer-enlaces a {
+  color: #fffcfc;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+
+.footer-enlaces a:hover {
+  color: #e10600;
+  padding-left: 8px;
+}
+
+.redes-sociales {
+  display: flex;
+  gap: 20px;
+}
+
+.redes-sociales a img {
+  width: 38px;
+  height: 38px;
+  transition: transform 0.3s;
+}
+
+.redes-sociales a:hover img {
+  transform: scale(1.2);
+}
+
+.footer-copy {
+  text-align: center;
+  padding-top: 30px;
+  border-top: 1px solid #222;
+  font-size: 0.9rem;
+  color: #ffffff;
+}
+

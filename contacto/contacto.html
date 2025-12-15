@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | PitStop F1</title>
+  <link rel="stylesheet" href="../contacto/css/style_contacto.css"> 
+  <link rel="icon" href="imagenes/iconos/icono.png" type="image/png">
+</head>
+<body id="inicio">
+
+  <!-- Menú de navegación -->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="../inicio/inicio.html">
+      <img src="imagenes/logo/logo.png" alt="Logo F1"></a>
+    </div>
+    <ul class="nav-menu">
+      <li><a href="../inicio/inicio.html">Inicio</a></li>
+      <li><a href="../pilotos/pilotos.html" class="active">Pilotos</a></li>
+      <li><a href="../equipos/equipos.html">Equipos</a></li>
+      <li><a href="../entrevistas/entrevistas.html">Entrevistas</a></li>
+      <li><a href="../contacto/contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+<div style="height: 140px;"></div>
+
+<section class="contacto-section" id="contacto">
+  <div class="contacto-caja">
+    <h2 class="contacto-titulo">CONTÁCTANOS</h2>
+    <p class="contacto-sub">Rellena el formulario y envíanos tu mensaje</p>
+
+    <form class="formulario-f1" action="../contacto/confirmacion.html" method="post">
+      
+      <label>Nombre completo</label>
+      <input type="text" name="nombre" placeholder="Ej: Fernando Alonso" required>
+
+      <label>Correo electrónico</label>
+      <input type="email" name="email" placeholder="fernando@astonmartin.com" required>
+
+      <label>Teléfono</label>
+      <input type="tel" name="telefono" placeholder="+34 600 123 456">
+
+      <label>Edad</label>
+      <input type="number" name="edad" min="10" max="120" placeholder="44">
+
+      <label>Asunto</label>
+      <input type="text" name="asunto" placeholder="Consulta / Sugerencia / Saludo" required>
+
+      <label>Mensaje</label>
+      <textarea name="mensaje" rows="6" placeholder="Escribe aquí lo que quieras decirnos..." required></textarea>
+
+      <label>País</label>
+      <select name="pais">
+        <option value="">Selecciona tu país</option>
+        <option>España</option>
+        <option>México</option>
+        <option>Argentina</option>
+        <option>Colombia</option>
+        <option>Chile</option>
+        <option>Perú</option>
+        <option>Otros</option>
+      </select>
+
+      <label>Piloto favorito 2025</label>
+      <select name="piloto">
+        <option value="">Elige tu favorito</option>
+        <option>Max Verstappen</option>
+        <option>Lando Norris</option>
+        <option>Lewis Hamilton</option>
+        <option>Fernando Alonso</option>
+        <option>Carlos Sainz</option>
+        <option>Otro</option>
+      </select>
+
+      <label>¿Qué tan fan eres de la F1? (0-10)</label>
+      <input type="range" name="valoracion" min="0" max="10" value="10">
+
+      <!-- Checkbox al lado del texto -->
+      <div class="checkbox-contenedor">
+        <label class="checkbox-label">
+          <input type="checkbox" name="newsletter" checked>
+          <span>Quiero recibir noticias de Fórmula 1</span>
+        </label>
+      </div>
+
+      <!-- Botón -->
+      <div class="boton-contenedor">
+        <button type="submit" class="btn-enviar">ENVIAR MENSAJE</button>
+      </div>
+
+    </form>
+
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-contenido">
+      
+      <div class="footer-logo">
+        <a href="../inicio/inicio.html">
+          <img src="imagenes/logo/logo.png" alt="Logo F1">  
+        </a>
+        <p>Tu web definitiva de Fórmula 1<br>Temporada 2025</p>
+      </div>
+
+      <div class="footer-enlaces">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#información">Información</a></li>
+          <li><a href="#noticias">Noticias</a></li>
+          <li><a href="#leyendas">Leyendas</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-redes">
+        <h4>Síguenos</h4>
+        <div class="redes-sociales">
+          <a href="https://www.instagram.com/f1/" aria-label="Instagram"><img src="imagenes/iconos/instagram.png" alt="Instagram"></a>
+          <a href="https://x.com/F1" aria-label="Twitter/X"><img src="imagenes/iconos/x.png" alt="X"></a>
+          <a href="https://www.youtube.com/channel/UCB_qr75-ydFVKSF9Dmo6izg" aria-label="YouTube"><img src="imagenes/iconos/youtube.png" alt="YouTube"></a>
+          <a href="https://www.tiktok.com/@f1?lang=ca" aria-label="TikTok"><img src="imagenes/iconos/tiktok.png" alt="TikTok"></a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-copy">
+      <p>© 2025 pitstop · Todos los derechos reservados · Hecho con pasión por un fan de la F1</p>
+    </div>
+  </footer>
+
+   
+</body>
+</html>
